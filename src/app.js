@@ -6,9 +6,9 @@ import './css/app.styl'
 class App extends Component {
   render() {
     return (
-      <div>abc</div>
+      <h1>Hello Webpack 2</h1>
     )
   }
 }
 
-render(document.getElementById('root'), <App />)
+render(<App />, document.getElementById('root'))

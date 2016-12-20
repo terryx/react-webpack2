@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "npm run clean-and-copy",
-    "prebuild:dev": "npm run clean-and-copy",
+    "prebuild:dev": "npm run clean",
     "build": "webpack -p --env.prod",
-    "dev": "webpack-dev-server --env.dev --content-base dist",
+    "dev": "node server",
     "build:dev": "webpack --env.dev",
     "copy": "cpy src/index.html dist",
     "clean": "rimraf dist",
@@ -44,6 +44,7 @@
     "stylus-loader": "^2.4.0",
     "webpack": "^2.1.0-beta.27",
     "webpack-config-utils": "^2.1.0",
+    "webpack-dev-middleware": "^1.9.0",
     "webpack-dev-server": "^2.1.0-beta.12",
     "webpack-validator": "^2.2.11"
   },
