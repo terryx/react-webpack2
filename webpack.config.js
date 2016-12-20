@@ -38,6 +38,7 @@ module.exports = {
 
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({name: 'vendor'}),
-    new HtmlWebpackPlugin({template: './index.html', inject: true})
+    new HtmlWebpackPlugin({template: './index.html', inject: true}),
+    new webpack.NoErrorsPlugin()
   ]
 };
