@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
+import testTreeShaking from './js/utils/tree-shakingtest.js';
 
 import './css/app.styl'
 
