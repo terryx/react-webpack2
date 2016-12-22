@@ -2,7 +2,8 @@ const { resolve } = require('path');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
 const webpack = require('webpack');
-const webpackConfig = require('./webpack.config');
+const { getIfUtils } = require('webpack-config-utils')
+const webpackConfig = require('./webpack.config')('dev');
 const bundler = webpack(webpackConfig);
 const bs = require('browser-sync').create();
 
